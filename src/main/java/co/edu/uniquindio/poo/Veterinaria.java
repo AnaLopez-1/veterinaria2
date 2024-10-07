@@ -8,6 +8,8 @@ public class Veterinaria {
     public Veterinaria(String nombre, String direccion){
         this.nombre=nombre;
         this.direccion=direccion;
+        assert!nombre.isBlank();
+        assert!direccion.isBlank();
     }
 
     public String getNombre() {

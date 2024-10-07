@@ -36,6 +36,6 @@ public class DueñoTest {
 
         assertThrows(Throwable.class, ()->new Dueño("Luis", "Salazar", "Luis2", "315343553", "123"));
 
-    LOG.info("Finalizando test validacionCorreo");
+        LOG.info("Finalizando test validacionCorreo");
     }
 }
