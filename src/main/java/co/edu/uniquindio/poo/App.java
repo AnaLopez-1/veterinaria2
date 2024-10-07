@@ -57,8 +57,14 @@ public class App {
         //Imprimir animales salvajes
         System.out.println("Animal salvaje \n");
         System.out.println(leon);
+        leon.comer();
+        leon.dormir();
+        System.out.println();
 
         System.out.println("Animal salvaje \n");
         System.out.println(aguila);
+        aguila.comer();
+        aguila.dormir();
+        System.out.println();
     }
 }
