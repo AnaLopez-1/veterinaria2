@@ -27,6 +27,6 @@ public class Aguila extends AnimalSalvaje{
     @Override
     public String toString() {
         return super.toString() + "\n" +
-               "Envergaduras Alas: " + envergadurasAlas;
+               "Envergaduras Alas: " + getEnvergadurasAlas();
     }
 }

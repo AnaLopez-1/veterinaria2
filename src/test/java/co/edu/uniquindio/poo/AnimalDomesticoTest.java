@@ -7,6 +7,7 @@
  */
 package co.edu.uniquindio.poo;
 
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.logging.Logger;
 import org.junit.jupiter.api.Test;
@@ -42,4 +43,10 @@ public class AnimalDomesticoTest {
         LOG.info("Finalizando test dueño");
     }
 
+    @Test
+    public void testAccionDelAnimal() {
+        AnimalDomestico gato = new AnimalDomestico("Lulu", 2, "3 kg", null, true, null);
+        assertDoesNotThrow(() -> gato.comer());
+        assertDoesNotThrow(() -> gato.dormir());
+    }
 }

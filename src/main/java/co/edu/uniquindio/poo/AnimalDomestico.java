@@ -43,4 +43,9 @@ public class AnimalDomestico extends Animal{
                "Dueño " + getDueño() + "\n\n" +
                "Veterinario " + getVeterinario() + "\n";
     }
+
+    public String getRaza() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getRaza'");
+    }
 }

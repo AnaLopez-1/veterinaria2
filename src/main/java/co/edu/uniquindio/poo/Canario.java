@@ -7,11 +7,11 @@ public class Canario extends AnimalDomestico{
     }
 
     public void comer(){
-        System.out.println("El animal está comiendo.");
+        System.out.println(getNombre()+ "está comiendo.");
     }
 
     public void dormir(){
-        System.out.println("El animal está durmiendo.");
+        System.out.println(getNombre()+ "está durmiendo.");
     }
 
     @Override
