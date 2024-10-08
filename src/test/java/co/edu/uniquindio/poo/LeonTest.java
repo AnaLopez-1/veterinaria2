@@ -35,6 +35,6 @@ public class LeonTest {
         assertEquals("Selva Guayu", leon.getHabitadNatural()); 
         assertEquals(veterinario2, leon.getVeterinario());
 
-        LOG.info("Finalizando test Gato");
+        LOG.info("Finalizando test Leon");
     }
 }
