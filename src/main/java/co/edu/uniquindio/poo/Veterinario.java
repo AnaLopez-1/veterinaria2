@@ -8,6 +8,12 @@ public class Veterinario extends Persona{
         super(nombre, apellido, correo, telefono);
         this.idVeterinario=idVeterinario;
         this.especializacion=especializacion;
+        assert!nombre.isBlank();
+        assert!apellido.isBlank();
+        assert correo.contains("@");
+        assert!telefono.isBlank();
+        assert!idVeterinario.isBlank();
+        assert!especializacion.isBlank();
     }
 
     public String getIdVeterinario() {

@@ -2,13 +2,13 @@ package co.edu.uniquindio.poo;
 
 public class AnimalSalvaje extends Animal{
     private String habitadNatural;
-    private boolean comportamientoInstitivo;
+    private boolean comportamientoInstintivo;
     private Veterinario veterinario;
 
-    public AnimalSalvaje(String nombre, int edad, String peso, String habitadNatural, boolean comportamientoInstitivo, Veterinario veterinario){
+    public AnimalSalvaje(String nombre, int edad, String peso, String habitadNatural, boolean comportamientoInstintivo, Veterinario veterinario){
         super(nombre, edad, peso);
         this.habitadNatural=habitadNatural;
-        this.comportamientoInstitivo=comportamientoInstitivo;
+        this.comportamientoInstintivo=comportamientoInstintivo;
         this.veterinario=veterinario;
     }
 
@@ -20,12 +20,12 @@ public class AnimalSalvaje extends Animal{
         this.habitadNatural = habitadNatural;
     }
 
-    public boolean isComportamientoInstitivo() {
-        return comportamientoInstitivo;
+    public boolean isComportamientoInstintivo() {
+        return comportamientoInstintivo;
     }
 
-    public void setComportamientoInstitivo(boolean comportamientoInstitivo) {
-        this.comportamientoInstitivo = comportamientoInstitivo;
+    public void setComportamientoInstintivo(boolean comportamientoInstintivo) {
+        this.comportamientoInstintivo = comportamientoInstintivo;
     }
 
     public Veterinario getVeterinario() {
@@ -40,7 +40,7 @@ public class AnimalSalvaje extends Animal{
     public String toString() {
         return super.toString() + "\n" +
                "Habitad Natural: " + habitadNatural + "\n" +
-               "Comportamiento Institivo: " + comportamientoInstitivo + "\n\n" +
+               "Comportamiento Instintivo: " + comportamientoInstintivo + "\n\n" +
                "Veterinario " + getVeterinario() + "\n";
     }
 }
