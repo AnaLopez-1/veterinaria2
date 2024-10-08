@@ -30,7 +30,7 @@ public class Veterinaria {
 
     @Override
     public String toString() {
-        return "Veterinaria\n" +
+        return "Veterinaria \n\n" +
                 "Nombre:" + nombre + "\n" +
                 "Direccion:" + direccion + "\n";
     }

@@ -8,8 +8,7 @@ public class App {
     public static void main(String[] args) {
 
         Veterinaria veterinaria=new Veterinaria("Patitas peludas", "Barrio Granada Carrera 22 Calle 13");
-        System.out.println(veterinaria);
-    
+        System.out.println(veterinaria);    
     
         //Crear veterinario
         Veterinario veterinario=new Veterinario("Luis", "Perez", "LuisP@gmail.com","1234","129792","Canino");
