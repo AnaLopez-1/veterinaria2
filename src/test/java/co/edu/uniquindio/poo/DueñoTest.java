@@ -8,6 +8,7 @@
 package co.edu.uniquindio.poo;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.logging.Logger;
 import org.junit.jupiter.api.Test;
 
@@ -36,5 +37,19 @@ public class DueñoTest {
         assertThrows(Throwable.class, ()->new Dueño("Luis", "Salazar", "Luis2", "315343553", "123"));
 
         LOG.info("Finalizando test validacionCorreo");
+    }
+
+@Test 
+    public void testDueño(){
+        LOG.info("Iniciando test Dueño");
+
+        Dueño dueño1 = new Dueño("Luis", "Salazar", "Luis2@gmail.com", "315343553", "123"); 
+        assertEquals("Luis",dueño1.getNombre());
+        assertEquals("Salazar",dueño1.getApellido());
+        assertEquals("Luis2@gmail.com",dueño1.getCorreo());
+        assertEquals("315343553",dueño1.getTelefono());
+        assertEquals("123",dueño1.getCedula());
+
+        LOG.info("Finalizando test Dueño");
     }
 }

@@ -33,7 +33,7 @@ public class AnimalDomesticoTest {
     }
 
     @Test
-    public void Dueño() {
+    public void dueñoAnimalDomestico() {
         LOG.info("Iniciando test dueño");
 
         AnimalDomestico animal = new AnimalDomestico("Fido", 3, "10kg", null, true, null);

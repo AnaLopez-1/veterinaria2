@@ -6,6 +6,7 @@
  * Licencia GNU/GPL V3.0 (https://raw.githubusercontent.com/grid-uq/poo/main/LICENSE) 
  */
 package co.edu.uniquindio.poo;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.logging.Logger;
@@ -38,4 +39,20 @@ public class VeterinarioTest {
 
         LOG.info("Finalizando test validacionCorreo");
     }
+
+    @Test
+        public void testVeterianrio() {
+            LOG.info("Iniciando test Veterinario");
+
+            Veterinario veterinario2 = new Veterinario("María", "Hincapie", "MahiP@gmail.com","12345","12979","Felino");
+            assertEquals("María", veterinario2.getNombre());
+            assertEquals("Hincapie", veterinario2.getApellido());
+            assertEquals("MahiP@gmail.com", veterinario2.getCorreo()); 
+            assertEquals("12345", veterinario2.getTelefono());
+            assertEquals("12979", veterinario2.getIdVeterinario());
+            assertEquals("Felino", veterinario2.getEspecializacion());
+
+            LOG.info("Finalizando test Veterinario");
+    }
+
 }

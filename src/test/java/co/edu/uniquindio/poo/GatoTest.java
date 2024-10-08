@@ -36,6 +36,5 @@ public class GatoTest {
         assertEquals(veterinario2, gato.getVeterinario());
 
         LOG.info("Finalizando test Gato");
-
     }
 }
